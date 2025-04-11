@@ -54,17 +54,17 @@
   <meta property="og:image" content="https://haldwanidormitory.com/assets/og-preview.jpg">
 
   
-<nav class="bg-gradient-to-br from-yellow-400 via-orange-500 to-indigo-800 text-white p-4 shadow">
-    <div class="nav-container flex justify-between items-center">
-      
-      <button class="nav-toggle text-3xl md:hidden" id="navToggle">&#9776;</button>
-      <ul class="nav-links hidden md:flex space-x-4" id="navLinks">
+  <nav class="bg-gradient-to-br from-yellow-400 via-orange-500 to-indigo-800 text-white p-4 shadow">
+    <div class="flex justify-between items-center max-w-6xl mx-auto">
+      <div class="text-xl font-bold"></div> <!-- Empty, so no visible logo -->
+      <button class="md:hidden text-3xl focus:outline-none" id="navToggle">&#9776;</button>
+      <ul id="navLinks" class="hidden flex-col space-y-2 mt-4 md:mt-0 md:flex md:flex-row md:space-x-4 md:space-y-0">
         <li><a href="index.html" class="hover:underline">Home</a></li>
         <li><a href="room-type.html" class="hover:underline">Room Types</a></li>
         <li><a href="booking.html" class="hover:underline">Booking</a></li>
         <li><a href="contact.html" class="hover:underline">Contact Us</a></li>
-        <li><a class="active hover:underline" href="shanti-rental-and-dormitory.html">About Us</a></li>
-        <li><a href="how-to-reach.html" class="hover:underline">How To Reach Us - Travel Guide </a></li>
+        <li><a href="shanti-rental-and-dormitory.html" class="hover:underline">About Us</a></li>
+        <li><a href="how-to-reach.html" class="hover:underline">How To Reach Us</a></li>
       </ul>
     </div>
   </nav>
@@ -170,5 +170,18 @@
 
   <!-- Tailwind Aspect Ratio Plugin -->
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/aspect-ratio@0.4.0"></script>
+
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const navToggle = document.getElementById("navToggle");
+      const navMenu = document.getElementById("navLinks");
+  
+      navToggle.addEventListener("click", () => {
+        navMenu.classList.toggle("hidden");
+      });
+    });
+  </script>
+  
 </body>
 </html>
