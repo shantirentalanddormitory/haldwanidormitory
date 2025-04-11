@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Book Your Stay – Shanti Rental and Dormitory, Haldwani</title>
+  <meta name="description" content="Online booking for Shanti Rental and Dormitory in Haldwani near Kathgodam. Reserve beds in male/female dorms or book private rooms for family stays.">
+
+
+
+  
+
+<meta name="description" content="Book your stay at Shanti Rental and Dormitory near Kathgodam Railway Station, Haldwani. Affordable rooms at ₹399 for families, students, and travelers. Private rooms, dorms, and attached bathrooms available." />
+<meta name="keywords" content="budget stay Kathgodam, rooms for ₹399 in Kathgodam, private room Kathgodam, dormitory booking Haldwani, Kathgodam budget hotel, accommodation near Kathgodam railway station, book room in Haldwani, Haldwani dormitory booking, cheap rooms in Kathgodam, Shanti Rental Dormitory Kathgodam, stay near Kathgodam railway station" />
+<meta name="author" content="Shanti Rental and Dormitory" />
+<meta name="robots" content="index, follow" />
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LodgingBusiness",
+  "name": "Shanti Rental and Dormitory",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Kumaon Colony, Bhotia Farm, Jawahar Jyoti, Damuadhunga",
+    "addressLocality": "Kathgodam",
+    "addressRegion": "Uttarakhand",
+    "postalCode": "263139",
+    "addressCountry": "IN"
+  },
+  "priceRange": "₹399",
+  "telephone": "+91 94101 09367",
+  "email": "shantirentaldorms@gmail.com",
+  "url": "https://haldwanidormitory.com/booking.html",
+  "sameAs": [
+    "https://wa.me/919410109367"
+  ]
+}
+</script>
+
+</head>
+</head>
+
+  <!-- Tailwind CSS CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+
+  <!-- External custom stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+<body class="bg-white text-gray-900">
+
+  <!-- Navigation Bar -->
+  <nav class="bg-gradient-to-br from-yellow-400 via-orange-500 to-indigo-800 text-white p-4 shadow">
+    <div class="nav-container flex justify-between items-center">
+
+      <button class="nav-toggle text-3xl md:hidden" id="navToggle">&#9776;</button>
+      <ul class="nav-links hidden md:flex space-x-4" id="navLinks">
+        <li><a href="index.html" class="hover:underline">Home</a></li>
+        <li><a href="room-type.html" class="hover:underline">Room Types</a></li>
+        <li><a class="active hover:underline" href="booking.html">Booking</a></li>
+        <li><a href="contact.html" class="hover:underline">Contact Us</a></li>
+        <li><a href="shanti-rental-and-dormitory.html" class="hover:underline">About Us</a></li>
+        <li><a href="how-to-reach.html" class="hover:underline">How To Reach Us - Travel Guide </a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Booking Content -->
+  <div class="booking-container px-4 py-8 max-w-4xl mx-auto">
+    <h2 class="text-2xl font-bold mb-4">📅 Book Your Stay at Shanti Rental and Dormitory, Haldwani</h2>
+    <p class="mb-6">
+      Reserve your bed or private room at our peaceful dormitory near Kathgodam.
+      Quick and easy online booking for PG, hostel, or family stays in Haldwani.
+    </p>
+
+    <iframe 
+      title="Booking Form"
+      src="https://docs.google.com/forms/d/e/1FAIpQLSdzxSLs0Tc5pK63vtle665j7MORfWA05lKM0avMZOgxaB58GA/viewform?embedded=true" 
+      width="100%" 
+      height="800px" 
+      class="booking-form-frame border border-gray-300 shadow-md rounded-lg" 
+      loading="lazy">
+    </iframe>
+  </div>
+
+  <!-- JavaScript for nav toggle -->
+  <script>
+    document.getElementById('navToggle').addEventListener('click', function () {
+      document.getElementById('navLinks').classList.toggle('hidden');
+    });
+  </script>
+
+
+<script>
+  const links = document.querySelectorAll('.nav-links a');
+  const currentPath = window.location.pathname.split('/').pop();
+
+  links.forEach(link => {
+    if (link.getAttribute('href') === currentPath) {
+      link.classList.add('underline', 'font-bold');
+    } else {
+      link.classList.remove('active');
+    }
+  });
+</script>
+
+
+
+  <footer class="bg-gray-900 text-white text-center py-4">
+    <p>&copy; 2025 Shanti Rental and Dormitory | <a href="mailto:shantirentaldorms@gmail.com" class="text-yellow-400 hover:underline">Email Us</a></p>
+  </footer>
+
+</body>
+</html>
