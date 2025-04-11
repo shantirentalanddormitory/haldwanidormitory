@@ -54,51 +54,30 @@
   </head>
 
 
-  <nav class="bg-gray-900 text-white p-4 shadow">
-    <div class="container mx-auto flex justify-between items-center">
-      <button class="nav-toggle text-3xl md:hidden">&#9776;</button>
-      
+  
       <!-- Navigation links -->
-<ul class="nav-links hidden md:flex space-x-4">
-  <li>
-    <a href="index.html"
-       class="px-4 py-2 rounded-xl bg-yellow-500 text-white font-semibold transition-all duration-300 hover:bg-yellow-600 hover:shadow-lg active:scale-95">
-      Home
-    </a>
-  </li>
-  <li>
-    <a href="room-type.html"
-       class="px-4 py-2 rounded-xl bg-gray-800 text-white font-semibold transition-all duration-300 hover:bg-yellow-500 hover:text-black hover:shadow-lg active:scale-95">
-      Room Types
-    </a>
-  </li>
-  <li>
-    <a href="booking.html"
-       class="px-4 py-2 rounded-xl bg-gray-800 text-white font-semibold transition-all duration-300 hover:bg-yellow-500 hover:text-black hover:shadow-lg active:scale-95">
-      Booking
-    </a>
-  </li>
-  <li>
-    <a href="contact.html"
-       class="px-4 py-2 rounded-xl bg-gray-800 text-white font-semibold transition-all duration-300 hover:bg-yellow-500 hover:text-black hover:shadow-lg active:scale-95">
-      Contact Us
-    </a>
-  </li>
-  <li>
-    <a href="shanti-rental-and-dormitory.html"
-       class="px-4 py-2 rounded-xl bg-gray-800 text-white font-semibold transition-all duration-300 hover:bg-yellow-500 hover:text-black hover:shadow-lg active:scale-95">
-      About Us
-    </a>
-  </li>
-</ul>
-<a href="how-to-reach.html"
-       class="px-4 py-2 rounded-xl bg-gray-800 text-white font-semibold transition-all duration-300 hover:bg-yellow-500 hover:text-black hover:shadow-lg active:scale-95">
-      How To Reach Us - Travel Guide
-    </a>
-  </li>
-</ul>
-
-
+      <nav class="bg-gradient-to-br from-yellow-400 via-orange-500 to-indigo-800 text-white p-4 shadow relative">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+          <div class="text-xl font-bold"></div>
+      
+          <!-- Hamburger -->
+          <button id="navToggle" class="md:hidden text-3xl focus:outline-none">
+            &#9776;
+          </button>
+      
+          <!-- Menu -->
+          <ul id="navMenu" class="hidden absolute top-full left-0 w-full bg-indigo-800 text-white md:flex md:static md:w-auto md:bg-transparent md:space-x-4 md:items-center flex-col md:flex-row space-y-2 md:space-y-0 p-4 md:p-0 z-50">
+            <li><a href="index.html" class="block px-4 py-2 rounded-xl bg-yellow-500 font-semibold hover:bg-yellow-600">Home</a></li>
+            <li><a href="room-type.html" class="block px-4 py-2 rounded-xl bg-gray-800 font-semibold hover:bg-yellow-500 hover:text-black">Room Types</a></li>
+            <li><a href="booking.html" class="block px-4 py-2 rounded-xl bg-gray-800 font-semibold hover:bg-yellow-500 hover:text-black">Booking</a></li>
+            <li><a href="contact.html" class="block px-4 py-2 rounded-xl bg-gray-800 font-semibold hover:bg-yellow-500 hover:text-black">Contact Us</a></li>
+            <li><a href="shanti-rental-and-dormitory.html" class="block px-4 py-2 rounded-xl bg-gray-800 font-semibold hover:bg-yellow-500 hover:text-black">About Us</a></li>
+            <li><a href="how-to-reach.html" class="block px-4 py-2 rounded-xl bg-gray-800 font-semibold hover:bg-yellow-500 hover:text-black">How To Reach Us</a></li>
+          </ul>
+        </div>
+      </nav>
+      
+      
 
   
       <!-- Clickable Phone Number -->
@@ -662,7 +641,16 @@
   AOS.init();
 </script>
 
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const navToggle = document.getElementById("navToggle");
+    const navMenu = document.getElementById("navMenu");
 
+    navToggle.addEventListener("click", () => {
+      navMenu.classList.toggle("hidden");
+    });
+  });
+</script>
 
 </body>
 </html>
